@@ -1,0 +1,3 @@
+// have the client modules installed, not just the server modules
+// we need to run `npm run build` in the client folder so the react app is created
+// we need to tell the express app to give back the html and the corresponding js from that directory
