@@ -21,7 +21,7 @@ function Portfolio() {
 
     return (
         <section id="bodyMain" className="container my-5">
-            <div className="card border-dark mb-5">
+            <div className="card border-light mb-5">
                 <div className="card-body">
                     <h1 className="mb-1">Projects</h1>
                     <hr style={{ border: "2px solid grey" }} className="mb-4" />
@@ -68,7 +68,8 @@ function Portfolio() {
                                     <img src={SCOPE} className="img" alt="placehold" style={{ width: "100%" }} />
                                 </a>
                                 <div className="card-body">
-                                    Horoscope application where users can create their own account to track their daily horoscope. Users are also able to compare two horoscopes in order to retrieve their compatibility.
+                                    Horoscope application where users can create their own account to track their daily horoscope. Users are also able to compare two horoscopes in order to retrieve their compatibility.<br/>
+                                    Test <b>Username</b> and <b>Password</b> : asdf
                                 </div>
                                 <div className="card-subtitle mb-2 text-muted">
                                     HTML5, CSS, Bootstrap, AJAX, Axios, Express, Node.js, Sessions
@@ -78,11 +79,43 @@ function Portfolio() {
                                 </div>
                             </div>
                         </div>
+                        <div className="col mb-4">
+                            <div className="card h-100">
+                                <div id="cardTitle" className="card-link" >
+                                    <img src={employeeTracker} className="img" alt="placehold" style={{ width: "100%" }} />
+                                </div>
+                                <div className="card-body">
+                                    Terminal run application for someone to easily interact with information stored in databases. This solution is specifically geared towards a organization that works from departments, to roles, to employees.
+                                </div>
+                                <div className="card-subtitle mb-2 text-muted">
+                                    Command Line (Terminal), mySQL, Node.js, JS, HTML5, mySQL
+                                </div>
+                                <div className='card-footer' style={{ zIndex: '1' }}>
+                                    <a className="card-link" href="https://github.com/omata48/Employee-Tracker" target="_blank" rel="noopener noreferrer">Visit the project's repo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col mb-4">
+                            <div className="card h-100">
+                                <a id="cardTitle" className="card-link" href="https://shrouded-beyond-40899.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                    <img src={budgetTracker} className="img" alt="placehold" style={{ width: "100%" }} />
+                                </a>
+                                <div className="card-body">
+                                    Budget application with offline access and functionality. User is able to keep track of deposits and expenses regardless of having a connection to the internet. The application can also be installed by users utilizing Google Chrome or on a mobile device
+                                </div>
+                                <div className="card-subtitle mb-2 text-muted">
+                                    MongoDB(mongoose), Express, PWA, Offline Capabilities, Node.js, JS, HTML5
+                                </div>
+                                <div className='card-footer' style={{ zIndex: '1' }}>
+                                    <a className="card-link" href="https://github.com/omata48/PWA-HW" target="_blank" rel="noopener noreferrer">Visit the project's repo</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             {/* Section for excercises */}
-            <div className="card border-dark">
+            {/* <div className="card border-dark">
                 <div className="card-body">
                     <h1 className="mb-1">Excercises</h1>
                     <hr style={{ border: "2px solid grey" }} className="mb-4" />
@@ -229,7 +262,7 @@ function Portfolio() {
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }

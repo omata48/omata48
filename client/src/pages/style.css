@@ -8,3 +8,8 @@ a:active {
 .img-thumbnail{
     margin-top: 10%;
 }
+
+#cardTitle{
+    height: 400px;
+    overflow: hidden;
+}
