@@ -1,6 +1,4 @@
-# Omar Mata's Portfolio
-
-Full stack web developer leveraging an architectural education to build more intuitive user experiences with progressive web applications. Developing skills in JavaScript, CSS, React.js, Node.js, and responsive application design. 
+Full stack web developer leveraging an architectural education to build more intuitive user experiences with progressive web applications. Developing skills in JavaScript, CSS, React.js, mySQL, mongoDB, Node.js, and responsive application design. 
 
 ## Contact me:
 [Connect with me on LinkedIn](https://www.linkedin.com/in/omar-mata)  
