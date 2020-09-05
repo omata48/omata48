@@ -10,8 +10,8 @@ function Contact() {
                     <hr style={{ border: "2px solid grey" }} className="mb-4" />
                     <ul className="list-group list-group-flush" style={{ alignItems: "baseline"}}>
                         <li className="list-group-item align-left"><SocialIcon url='mailto:omata48@outlook.com?subject=Hello Omar (portfolio)' bgColor="#343A40" /> <span className="h4 ml-3">Send me an email: omata48@outlook.com</span></li>
-                        <li className="list-group-item align-left"><SocialIcon url='https://github.com/omata48' bgColor="#848484" /> <span className="h4 ml-3">My Projects on Github: https://github.com/omata48</span> </li>
-                        <li className="list-group-item align-left"><SocialIcon url='https://www.linkedin.com/in/omar-mata' bgColor="#343A40"/> <span className="h4 ml-3">Connect with me on LinkedIn: https://www.linkedin.com/in/omar-mata/</span> </li>
+                        <li className="list-group-item align-left"><SocialIcon target="_blank" url='https://github.com/omata48' bgColor="#848484" /> <span className="h4 ml-3">My Projects on Github: https://github.com/omata48</span> </li>
+                        <li className="list-group-item align-left"><SocialIcon target="_blank" url='https://www.linkedin.com/in/omar-mata' bgColor="#343A40"/> <span className="h4 ml-3">Connect with me on LinkedIn: https://www.linkedin.com/in/omar-mata/</span> </li>
                     </ul>
                 </div>
             </div>
