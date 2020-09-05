@@ -1,20 +1,24 @@
 import React from "react";
 import "./style.css";
+import ProjectCard from "../components/ProjectCard";
 
+// images to use
 import QCorner from "../utils/images/projects/QCorner.png";
 import SCOPE from "../utils/images/projects/SCOPE.png";
+import dogDaily from "../utils/images/projects/dogDaily.png"
 import Weather from "../utils/images/projects/weatherApp.png";
-
-import passwordGen from "../utils/images/excercises/passwordGen.png";
-import codingQuiz from "../utils/images/excercises/codingQuiz.png";
-import calendar from "../utils/images/excercises/calendar.png";
-import readmeGen from "../utils/images/excercises/readmeGen.png";
-import htmlRender from "../utils/images/excercises/htmlRender.gif";
-import noteTaker from "../utils/images/excercises/noteTaker.png";
 import employeeTracker from "../utils/images/excercises/employeeTracker.png";
-import workoutTracker from "../utils/images/excercises/workoutTracker.png";
 import budgetTracker from "../utils/images/excercises/budgetTracker.png";
-import employeeDirectory from "../utils/images/excercises/employeeDirectory.gif";
+
+// all project images
+// import passwordGen from "../utils/images/excercises/passwordGen.png";
+// import codingQuiz from "../utils/images/excercises/codingQuiz.png";
+// import calendar from "../utils/images/excercises/calendar.png";
+// import readmeGen from "../utils/images/excercises/readmeGen.png";
+// import htmlRender from "../utils/images/excercises/htmlRender.gif";
+// import noteTaker from "../utils/images/excercises/noteTaker.png";
+// import workoutTracker from "../utils/images/excercises/workoutTracker.png";
+// import employeeDirectory from "../utils/images/excercises/employeeDirectory.gif";
 
 
 function Portfolio() {
@@ -26,91 +30,54 @@ function Portfolio() {
                     <h1 className="mb-1">Projects</h1>
                     <hr style={{ border: "2px solid grey" }} className="mb-4" />
                     <div className="row row-cols-1 row-cols-sm-2 card-deck">
-                        <div className="col mb-4">
-                            <div className="card h-100">
-                                <a id="cardTitle" className="card-link" href="https://abtree46.github.io/project1/" target="_blank" rel="noopener noreferrer">
-                                    <img src={QCorner} className="img" alt="placehold" style={{ width: "100%" }} />
-                                </a>
-                                <div className="card-body">
-                                    Curated children’s site with activities to keep younger audiences entertained. Contains educational content, animal GIFs and filtered DIY videos from Youtube
-                                </div>
-                                <div className="card-subtitle mb-2 text-muted">
-                                    HTML5, CSS(Bootstrap), JS, jQuery, AJAX, Node.js
-                                </div>
-                                <div className='card-footer' style={{ zIndex: '1' }}>
-                                    <a className="card-link" href="https://github.com/abtree46/project1" target="_blank" rel="noopener noreferrer">
-                                        Visit the project's repo
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col mb-4">
-                            <div className="card h-100">
-                                <a id="cardTitle" className="card-link" href="https://omata48.github.io/Weather-Dashboard/" target="_blank" rel="noopener noreferrer">
-                                    <img src={Weather} className="img" alt="placehold" style={{ width: "100%" }} />
-                                </a>
-                                <div className="card-body">
-                                    Web application to view weather outlook for a city searched by a user. Connects with Open Weather API to provide the data to the user.
-                                </div>
-                                <div className="card-subtitle mb-2 text-muted">
-                                    HTML5, Bootstrap, AJAX, jQuery, Node.js
-                                </div>
-                                <div className='card-footer' style={{ zIndex: '1' }}>
-                                    <a className="card-link" href="https://github.com/omata48/Weather-Dashboard" target="_blank" rel="noopener noreferrer">
-                                        Visit the project's repo
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col mb-4">
-                            <div className="card h-100">
-                                <a id="cardTitle" className="card-link" href="https://scope-g1.herokuapp.com" target="_blank" rel="noopener noreferrer">
-                                    <img src={SCOPE} className="img" alt="placehold" style={{ width: "100%" }} />
-                                </a>
-                                <div className="card-body">
-                                    Horoscope application where users can create their own account to track their daily horoscope. Users are also able to compare two horoscopes in order to retrieve their compatibility.<br/>
-                                    Test <b>Username</b> and <b>Password</b> : asdf
-                                </div>
-                                <div className="card-subtitle mb-2 text-muted">
-                                    HTML5, CSS, Bootstrap, AJAX, Axios, Express, Node.js, Sessions
-                                </div>
-                                <div className='card-footer' style={{ zIndex: '1' }}>
-                                    <a className="card-link" href="https://github.com/mmeleen/scope" target="_blank" rel="noopener noreferrer">Visit the project's repo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col mb-4">
-                            <div className="card h-100">
-                                <div id="cardTitle" className="card-link" >
-                                    <img src={employeeTracker} className="img" alt="placehold" style={{ width: "100%" }} />
-                                </div>
-                                <div className="card-body">
-                                    Terminal run application for someone to easily interact with information stored in databases. This solution is specifically geared towards a organization that works from departments, to roles, to employees.
-                                </div>
-                                <div className="card-subtitle mb-2 text-muted">
-                                    Command Line (Terminal), mySQL, Node.js, JS, HTML5, mySQL
-                                </div>
-                                <div className='card-footer' style={{ zIndex: '1' }}>
-                                    <a className="card-link" href="https://github.com/omata48/Employee-Tracker" target="_blank" rel="noopener noreferrer">Visit the project's repo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col mb-4">
-                            <div className="card h-100">
-                                <a id="cardTitle" className="card-link" href="https://shrouded-beyond-40899.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                                    <img src={budgetTracker} className="img" alt="placehold" style={{ width: "100%" }} />
-                                </a>
-                                <div className="card-body">
-                                    Budget application with offline access and functionality. User is able to keep track of deposits and expenses regardless of having a connection to the internet. The application can also be installed by users utilizing Google Chrome or on a mobile device
-                                </div>
-                                <div className="card-subtitle mb-2 text-muted">
-                                    MongoDB(mongoose), Express, PWA, Offline Capabilities, Node.js, JS, HTML5
-                                </div>
-                                <div className='card-footer' style={{ zIndex: '1' }}>
-                                    <a className="card-link" href="https://github.com/omata48/PWA-HW" target="_blank" rel="noopener noreferrer">Visit the project's repo</a>
-                                </div>
-                            </div>
-                        </div>
+                        <ProjectCard 
+                            title="Dog Daily"
+                            pageLink="https://puppers-daily.herokuapp.com/"
+                            imgLink={dogDaily}
+                            description="Web application focused on the daily interactions with your dogs. This application provides users the ability to add pets to profiles they create. Users can also mark when they feed their pets."
+                            skills="HTML5, CSS, React, mySQL, Express, Node.js, React-Bootstrap, Axios"
+                            repoLink="https://github.com/omata48/Puppers-Daily"
+                        />
+                        <ProjectCard 
+                            title="Quarantine Corner"
+                            pageLink="https://abtree46.github.io/project1/"
+                            imgLink={QCorner}
+                            description="Curated children’s site with activities to keep younger audiences entertained. Contains educational content, animal GIFs and filtered DIY videos from Youtube"
+                            skills="HTML5, CSS(Bootstrap), JS, jQuery, AJAX, Node.js"
+                            repoLink="https://github.com/abtree46/project1"
+                        />
+                        <ProjectCard 
+                            title="Weather Dashboard"
+                            pageLink="https://omata48.github.io/Weather-Dashboard/" 
+                            imgLink={Weather} 
+                            description="Web application to view weather outlook for a city searched by a user. Connects with Open Weather API to provide the data to the user."
+                            skills="HTML5, Bootstrap, AJAX, jQuery, Node.js"
+                            repoLink="https://github.com/omata48/Weather-Dashboard"
+                        />
+                        <ProjectCard
+                            title="SCOPE"
+                            pageLink="https://scope-g1.herokuapp.com"
+                            imgLink={SCOPE}
+                            description="Horoscope application where users can create their own account to track their daily horoscope. Users are also able to compare two horoscopes in order to retrieve their compatibility.
+                            To test the application, you can use the username and password : asdf"
+                            skills="HTML5, CSS, Bootstrap, AJAX, Axios, Express, Node.js, Sessions"
+                            repoLink="https://github.com/mmeleen/scope"
+                        />
+                        <ProjectCard 
+                            title="Employee Tracker"
+                            imgLink={employeeTracker}
+                            description="Terminal run application for someone to easily interact with information stored in databases. This solution is specifically geared towards a organization that works from departments, to roles, to employees."
+                            skills="Command Line (Terminal), mySQL, Node.js, JS, HTML5, mySQL"
+                            repoLink="https://github.com/omata48/Employee-Tracker"
+                        />
+                        <ProjectCard 
+                            title="Budget Tracker"
+                            pageLink="https://shrouded-beyond-40899.herokuapp.com/"
+                            imgLink={budgetTracker}
+                            description='Budget application with offline access and functionality. User is able to keep track of deposits and expenses regardless of having a connection to the internet. The application can also be installed by users utilizing Google Chrome or on a mobile device'
+                            skills='MongoDB(mongoose), Express, PWA, Offline Capabilities, Node.js, JS, HTML5'
+                            repoLink='https://github.com/omata48/PWA-HW'
+                        />
                     </div>
                 </div>
             </div>
