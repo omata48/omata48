@@ -45,7 +45,6 @@ function ProjectCard(props) {
           </a>
         </div>
       </div>
-      ;
     </div>
   );
 }
