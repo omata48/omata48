@@ -46,14 +46,14 @@ function Portfolio() {
                             skills="HTML5, CSS(Bootstrap), JS, jQuery, AJAX, Node.js"
                             repoLink="https://github.com/abtree46/project1"
                         />
-                        <ProjectCard 
+                        {/* <ProjectCard 
                             title="Weather Dashboard"
                             pageLink="https://omata48.github.io/Weather-Dashboard/" 
                             imgLink={Weather} 
                             description="Web application to view weather outlook for a city searched by a user. Connects with Open Weather API to provide the data to the user."
                             skills="HTML5, Bootstrap, AJAX, jQuery, Node.js"
                             repoLink="https://github.com/omata48/Weather-Dashboard"
-                        />
+                        /> */}
                         <ProjectCard
                             title="SCOPE"
                             pageLink="https://scope-g1.herokuapp.com"
@@ -63,13 +63,13 @@ function Portfolio() {
                             skills="HTML5, CSS, Bootstrap, AJAX, Axios, Express, Node.js, Sessions"
                             repoLink="https://github.com/mmeleen/scope"
                         />
-                        <ProjectCard 
+                        {/* <ProjectCard 
                             title="Employee Tracker"
                             imgLink={employeeTracker}
                             description="Terminal run application for someone to easily interact with information stored in databases. This solution is specifically geared towards a organization that works from departments, to roles, to employees."
                             skills="Command Line (Terminal), mySQL, Node.js, JS, HTML5, mySQL"
                             repoLink="https://github.com/omata48/Employee-Tracker"
-                        />
+                        /> */}
                         <ProjectCard 
                             title="Budget Tracker"
                             pageLink="https://shrouded-beyond-40899.herokuapp.com/"
