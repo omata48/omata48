@@ -9,11 +9,11 @@ if(process.env.NODE_ENV === "production"){
     app.use(express.static("client/build"));
 }
 
-app.get("/api/test", function(req,res) {
-    res.json({
-        test: "test"
-    })
-});
+// app.get("/api/test", function(req,res) {
+//     res.json({
+//         test: "test"
+//     })
+// });
 
 app.get("*", function(req, res) {
     res.sendFile("./client/build/index.html");

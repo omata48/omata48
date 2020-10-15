@@ -1,18 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'; 
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Nav from './components/Nav';
-import axios from "axios";
+// import axios from "axios";
 
 function App() {
-  useEffect(() => {
-    axios.get("/api/test").then(response => {
-      console.log(response.data)
-    })
-  })
   return (
     <Router>
       <div className="App">

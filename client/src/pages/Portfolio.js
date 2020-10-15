@@ -6,8 +6,8 @@ import ProjectCard from "../components/ProjectCard";
 import QCorner from "../utils/images/projects/QCorner.png";
 import SCOPE from "../utils/images/projects/SCOPE.png";
 import dogDaily from "../utils/images/projects/dogDaily.png"
-import Weather from "../utils/images/projects/weatherApp.png";
-import employeeTracker from "../utils/images/excercises/employeeTracker.png";
+// import Weather from "../utils/images/projects/weatherApp.png";
+// import employeeTracker from "../utils/images/excercises/employeeTracker.png";
 import budgetTracker from "../utils/images/excercises/budgetTracker.png";
 
 // all project images
